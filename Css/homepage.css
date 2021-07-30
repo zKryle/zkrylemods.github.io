@@ -1,7 +1,6 @@
 .titleheader{
-    margin-left: 50%;
-}
-
-.titleheaderdiv{
-    background-color: black;
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    border: #000;
 }
