@@ -15,7 +15,7 @@
     position: absolute;
 }
 
-.homeheader, .hovering-toggle{
+.hovering-toggle{
     color: black;
     font-size: 80px;
     font-weight: 800;
