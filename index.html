@@ -5,6 +5,20 @@
     <link rel="stylesheet" href="Css/homepage.css">
 </head>
 <body>
-        <h1 class="titleheader">Kryle Enterprises</h1>
-</body>
+    <video autoplay muted loop id="homepagevid1">
+
+        <source src="Video/homepage1.mp4" type="video/mp4">
+      
+      Your browser does not support the video tag.
+      
+      </video>
+        <h1 class="homeheader" id="homehead" onmouseenter="onHeaderOver()" onmouseleave="onHeaderOver()">Kryle Enterprises</h1>
+        <script>
+            function onHeaderOver() {
+                console.log("sus");
+  var element = document.getElementById("homehead");
+  element.classList.toggle("hovering-toggle");
+            }
+        </script>
+    </body>
 </html>
