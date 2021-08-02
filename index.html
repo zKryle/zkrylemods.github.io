@@ -4,17 +4,30 @@
     <head>
         <title>Kryle Enterprises - HOME</title>
         <link rel="stylesheet" href="Css/homepage.css">
+        <script>
+            let menuon = false;
+            function checkandsetMenuActivated(){
+                var element = document.getElementById("homeheaddiv");
+                console.log(menuon);
+                if (menuon){ 
+                    element.style.animation="moveBack 1.5s ease-in-out 0s 1 normal forwards"
+                    menuon = false;
+            } else { 
+                element.style.animation="moveLeft 3s ease-in-out 0s 1 normal forwards";
+                menuon = true;
+            }
+            }
+        </script>
     </head>
     <body>
-
         <video autoplay muted loop id="homepagevid1">
-
             <source src="Video/homepage1.mp4" type="video/mp4">
-
             Your browser does not support the video tag.
-
         </video>
-        <div class="homeheaderdiv">
+        <div id="menu" class="close open short">
+            <button onclick="checkandsetMenuActivated()">Test</button>
+        </div>
+        <div class="homeheaderdiv" id="homeheaddiv">
             <h1 aria-label="Kryle Enterprises" class="homeheader">
                 <div id="Kryle"><div aria-hidden="true" id="k"><span>K</span></div><div
                         aria-hidden="true" id="r"><span>r</span></div><div
