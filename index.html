@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Kryle Enterprises - HOME</title>
-    <link rel="stylesheet" href="Css/homepage.css">
-</head>
-<body>
-    <video autoplay muted loop id="homepagevid1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Kryle Enterprises - HOME</title>
+        <link rel="stylesheet" href="Css/homepage.css">
+    </head>
+    <body>
 
-        <source src="Video/homepage1.mp4" type="video/mp4">
-      
-      Your browser does not support the video tag.
-      
-      </video>
-        <h1 class="homeheader" id="homehead" onmouseenter="onHeaderOver()" onmouseleave="onHeaderOver()">Kryle Enterprises</h1>
-        <script>
-            function onHeaderOver() {
-                console.log("sus");
-  var element = document.getElementById("homehead");
-  element.classList.toggle("hovering-toggle");
-            }
-        </script>
+        <video autoplay muted loop id="homepagevid1">
+
+            <source src="Video/homepage1.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+        <div class="homeheaderdiv">
+            <h1 aria-label="Kryle Enterprises" class="homeheader">
+               <div id="Kryle"><div aria-hidden="true" id="k"><span>K</span></div><div aria-hidden="true" id="r"><span>r</span></div><div aria-hidden="true" id="y"><span>y</span></div><div aria-hidden="true" id="l"><span>l</span></div><div aria-hidden="true" id="e"><span>e</span></div></div>
+               <div id="Enterprises"><div aria-hidden="true" id="e">E</div><div aria-hidden="true" id="n">n</div><div aria-hidden="true" id="t">t</div><div aria-hidden="true" id="e1">e</div><div aria-hidden="true" id="r">r</div><div aria-hidden="true" id="p">p</div><div aria-hidden="true" id="r1">r</div><div aria-hidden="true" id="i">i</div><div aria-hidden="true" id="s">s</div><div aria-hidden="true" id="e2">e</div><div aria-hidden="true" id="s1">s</div></div>
+            </h1>
+        </div>
+
     </body>
 </html>

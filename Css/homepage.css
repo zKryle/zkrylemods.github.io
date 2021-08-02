@@ -1,35 +1,79 @@
-.homeheader{
-    color: aliceblue;
-    font-size: 80px;
-    font-weight: 800;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background: rgba(0, 0, 0, 0.5);
-    border: 4px solid;
-    border-color:aliceblue;
-    text-align: center;
-    border-radius: 10px;
-    height: auto;
-    width: 40%;
+.homeheaderdiv{
+    width: 35%;
+    height:15%;
+    margin-left: 50%;
     margin-top: 20%;
-    margin-left: 30%;
+    transform: translateX(-50%);
     position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border: 4px solid aliceblue;
 }
 
-.hovering-toggle{
-    color: black;
+.homeheader{
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translateY(-35%);
+    position: relative;
     font-size: 80px;
     font-weight: 800;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background: rgba(255, 255, 255, 0.5);
-    border: 4px solid;
-    border-color:black;
     text-align: center;
-    border-radius: 10px;
-    height: auto;
-    width: 40%;
-    margin-top: 20%;
-    margin-left: 30%;
-    position: absolute;
+ 
+}
+
+.homeheader div{
+    display: inline-block;
+}
+
+.homeheader div#Kryle div{
+    opacity: 0;
+    position: st;
+    animation: 3s ease-in-out 0s 1 bounceTopLetters forwards;
+}
+
+.homeheader div#Enterprises div{
+    opacity: 0;
+    position: static;
+    animation: 2s ease-in-out 5s 1 bounceBottomLetters forwards;
+}
+
+.homeheader div#Kryle div#k{ animation-delay: 0.25s;}
+.homeheader div#Kryle div#r{ animation-delay: 0.5s;}
+.homeheader div#Kryle div#y{ animation-delay: 0.75s;}
+.homeheader div#Kryle div#l{ animation-delay: 1s;}
+.homeheader div#Kryle div#e{ animation-delay: 1.25s;}
+.homeheader div#Enterprises div#s1{animation-delay: 1.15s;}
+.homeheader div#Enterprises div#e2{animation-delay: 1.30s;}
+.homeheader div#Enterprises div#s{animation-delay: 1.45s;}
+.homeheader div#Enterprises div#i{animation-delay: 1.60s;}
+.homeheader div#Enterprises div#r1{animation-delay: 1.75s;}
+.homeheader div#Enterprises div#p{animation-delay: 1.90s;}
+.homeheader div#Enterprises div#r{animation-delay: 2.05s;}
+.homeheader div#Enterprises div#e1{animation-delay: 2.20s;}
+.homeheader div#Enterprises div#t{animation-delay: 2.35s;}
+.homeheader div#Enterprises div#n{animation-delay: 2.50s;}
+.homeheader div#Enterprises div#e{animation-delay: 2.65s;}
+
+@keyframes bounceTopLetters{
+    0% {
+        transform: translateY(-3000%);
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 100;
+      }
+}
+
+@keyframes bounceBottomLetters{
+    0% {
+        transform: translateY(400%);
+      }
+      80%{
+          opacity: 30%;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 100;
+      }
 }
 
 
