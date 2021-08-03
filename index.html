@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Kryle Enterprises - Home</title>
-        <link rel="stylesheet" href="Css/homepage.css">
-        <script src="https://kit.fontawesome.com/848bb9de37.js"
-            crossorigin="anonymous"></script>
-        <script>
-            let menuon = false;
-            function checkandsetMenuActivated(){
-                var homeheader = document.getElementById("homeheaddiv");
-                var element = document.getElementById("menupage");
-                element.classList.toggle("disabled");
-                console.log(menuon);
-                if (menuon){ 
-                    homeheader.style.animation="moveBack 1.5s ease-in-out 0s 1 normal both"
-                    element.style.animation="closeMenu 1.5s ease-in-out 0s 1 normal both"
-                    menuon = false;
-            } else { 
-                homeheader.style.animation="moveLeft 3s ease-in-out 0s 1 normal both";
-                element.style.animation="openMenu 1.5s ease-in-out 1s 1 normal both"
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Kryle Enterprises - Home</title>
+    <link rel="stylesheet" href="Css/homepage.css">
+    <script src="https://kit.fontawesome.com/848bb9de37.js" crossorigin="anonymous"></script>
+    <script>
+        let menuon = false;
+
+        function checkandsetMenuActivated() {
+            var homeheader = document.getElementById("homeheaddiv");
+            var element = document.getElementById("menupage");
+            element.classList.toggle("disabled");
+            console.log(menuon);
+            if (menuon) {
+                homeheader.style.animation = "moveBack 1.5s ease-in-out 0s 1 normal both"
+                element.style.animation = "closeMenu 1.5s ease-in-out 0s 1 normal both"
+                menuon = false;
+            } else {
+                homeheader.style.animation = "moveLeft 3s ease-in-out 0s 1 normal both";
+                element.style.animation = "openMenu 1.5s ease-in-out 1s 1 normal both"
                 menuon = true;
             }
-            }
-        </script>
-    </head>
-    <body>
-        <video autoplay muted loop id="homepagevid1">
+        }
+    </script>
+</head>
+
+<body>
+    <video autoplay muted loop id="homepagevid1">
             <source src="Video/homepage1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div id="menu" class="close open short">
-            <button onclick="checkandsetMenuActivated()" id="menub"><h1
+    <div id="menu">
+        <button onclick="checkandsetMenuActivated()" id="menub"><h1
                     class="fas fa-bars menuh"> Menu</h1></button>
-        </div>
-        <div id="menupage">
-                <a href="" id="menuanch">About Me</a><br>
-                <a href="" id="menuanch">Contact Me</a><br>
-                <a href="" id="menuanch">My Mods</a><br>
-                <a href="" id="menuanch">Partners</a><br>
-                <a href="" id="menuanch">Mini Tutorials</a><p style="font-size: 15px; color:white;">(Wip)</p>
-        </div>
-        <div class="homeheaderdiv" id="homeheaddiv">
-            <h1 aria-label="Kryle Enterprises" class="homeheader">
-                <div id="Kryle"><div aria-hidden="true" id="k"><span>K</span></div><div
-                        aria-hidden="true" id="r"><span>r</span></div><div
-                        aria-hidden="true" id="y"><span>y</span></div><div
-                        aria-hidden="true" id="l"><span>l</span></div><div
-                        aria-hidden="true" id="e"><span>e</span></div></div>
-                <div id="Enterprises"><div aria-hidden="true" id="e">E</div><div
-                        aria-hidden="true" id="n">n</div><div aria-hidden="true"
-                        id="t">t</div><div aria-hidden="true" id="e1">e</div><div
-                        aria-hidden="true" id="r">r</div><div aria-hidden="true"
-                        id="p">p</div><div aria-hidden="true" id="r1">r</div><div
-                        aria-hidden="true" id="i">i</div><div aria-hidden="true"
-                        id="s">s</div><div aria-hidden="true" id="e2">e</div><div
-                        aria-hidden="true" id="s1">s</div></div>
-            </h1>
-        </div>
-    </body>
+    </div>
+    <div id="menupage">
+        <a href="aboutme.html" id="menuanch">About Me</a><br>
+        <a href="" id="menuanch">Contact Me</a><br>
+        <a href="" id="menuanch">My Mods</a><br>
+        <a href="" id="menuanch">Partners</a><br>
+        <a href="" id="menuanch">Mini Tutorials</a>
+        <p style="font-size: 15px; color:white;">(Wip)</p>
+    </div>
+    <div class="homeheaderdiv" id="homeheaddiv">
+        <h1 aria-label="Kryle Enterprises" class="homeheader">
+            <div id="Kryle">
+                <div aria-hidden="true" id="k"><span>K</span></div>
+                <div aria-hidden="true" id="r"><span>r</span></div>
+                <div aria-hidden="true" id="y"><span>y</span></div>
+                <div aria-hidden="true" id="l"><span>l</span></div>
+                <div aria-hidden="true" id="e"><span>e</span></div>
+            </div>
+            <div id="Enterprises">
+                <div aria-hidden="true" id="e">E</div>
+                <div aria-hidden="true" id="n">n</div>
+                <div aria-hidden="true" id="t">t</div>
+                <div aria-hidden="true" id="e1">e</div>
+                <div aria-hidden="true" id="r">r</div>
+                <div aria-hidden="true" id="p">p</div>
+                <div aria-hidden="true" id="r1">r</div>
+                <div aria-hidden="true" id="i">i</div>
+                <div aria-hidden="true" id="s">s</div>
+                <div aria-hidden="true" id="e2">e</div>
+                <div aria-hidden="true" id="s1">s</div>
+            </div>
+        </h1>
+    </div>
+</body>
+
 </html>
