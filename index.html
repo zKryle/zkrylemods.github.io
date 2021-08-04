@@ -13,7 +13,11 @@
             var homeheader = document.getElementById("homeheaddiv");
             var element = document.getElementById("menupage");
             element.classList.toggle("disabled");
+            // Toggle button delay
+            document.getElementById("menub").disabled = true;
+            setTimeout(function(){document.getElementById("menub").disabled = false;},2000);
             console.log(menuon);
+            // Play Animations
             if (menuon) {
                 homeheader.style.animation = "moveBack 1.5s ease-in-out 0s 1 normal both"
                 element.style.animation = "closeMenu 1.5s ease-in-out 0s 1 normal both"
@@ -35,69 +39,33 @@
     <div id="menu">
         <button onclick="checkandsetMenuActivated()" id="menub"><h1
                     class="fas fa-bars menuh"> Menu</h1></button>
-<<<<<<< Updated upstream
     </div>
     <div id="menupage">
         <a href="aboutme.html" id="menuanch">About Me</a><br>
         <a href="" id="menuanch">Contact Me</a><br>
-        <a href="" id="menuanch">My Mods</a><br>
+        <a href="" id="menuanch">My Projects</a><br>
         <a href="" id="menuanch">Partners</a><br>
         <a href="" id="menuanch">Mini Tutorials</a>
         <p style="font-size: 15px; color:white;">(Wip)</p>
     </div>
     <div class="homeheaderdiv" id="homeheaddiv">
         <h1 aria-label="Kryle Enterprises" class="homeheader">
-            <div id="Kryle">
-                <div aria-hidden="true" id="k"><span>K</span></div>
-                <div aria-hidden="true" id="r"><span>r</span></div>
-                <div aria-hidden="true" id="y"><span>y</span></div>
-                <div aria-hidden="true" id="l"><span>l</span></div>
-                <div aria-hidden="true" id="e"><span>e</span></div>
-            </div>
-            <div id="Enterprises">
-                <div aria-hidden="true" id="e">E</div>
-                <div aria-hidden="true" id="n">n</div>
-                <div aria-hidden="true" id="t">t</div>
-                <div aria-hidden="true" id="e1">e</div>
-                <div aria-hidden="true" id="r">r</div>
-                <div aria-hidden="true" id="p">p</div>
-                <div aria-hidden="true" id="r1">r</div>
-                <div aria-hidden="true" id="i">i</div>
-                <div aria-hidden="true" id="s">s</div>
-                <div aria-hidden="true" id="e2">e</div>
-                <div aria-hidden="true" id="s1">s</div>
-            </div>
+            <!-- Split the words in letters to play animations -->
+            <div id="Kryle"><div aria-hidden="true" id="k"><span>K</span></div><div
+                    aria-hidden="true" id="r"><span>r</span></div><div
+                    aria-hidden="true" id="y"><span>y</span></div><div
+                    aria-hidden="true" id="l"><span>l</span></div><div
+                    aria-hidden="true" id="e"><span>e</span></div></div>
+            <div id="Enterprises"><div aria-hidden="true" id="e">E</div><div
+                    aria-hidden="true" id="n">n</div><div aria-hidden="true"
+                    id="t">t</div><div aria-hidden="true" id="e1">e</div><div
+                    aria-hidden="true" id="r">r</div><div aria-hidden="true"
+                    id="p">p</div><div aria-hidden="true" id="r1">r</div><div
+                    aria-hidden="true" id="i">i</div><div aria-hidden="true"
+                    id="s">s</div><div aria-hidden="true" id="e2">e</div><div
+                    aria-hidden="true" id="s1">s</div></div>
         </h1>
     </div>
 </body>
 
 </html>
-=======
-        </div>
-        <div id="menupage">
-                <a href="" id="menuanch">About Me</a><br>
-                <a href="" id="menuanch">Contact Me</a><br>
-                <a href="" id="menuanch">My Projects</a><br>
-                <a href="" id="menuanch">Partners</a><br>
-                <a href="" id="menuanch">Mini Tutorials</a><p style="font-size: 15px; color:white;">(Wip)</p>
-        </div>
-        <div class="homeheaderdiv" id="homeheaddiv">
-            <h1 aria-label="Kryle Enterprises" class="homeheader">
-                <div id="Kryle"><div aria-hidden="true" id="k"><span>K</span></div><div
-                        aria-hidden="true" id="r"><span>r</span></div><div
-                        aria-hidden="true" id="y"><span>y</span></div><div
-                        aria-hidden="true" id="l"><span>l</span></div><div
-                        aria-hidden="true" id="e"><span>e</span></div></div>
-                <div id="Enterprises"><div aria-hidden="true" id="e">E</div><div
-                        aria-hidden="true" id="n">n</div><div aria-hidden="true"
-                        id="t">t</div><div aria-hidden="true" id="e1">e</div><div
-                        aria-hidden="true" id="r">r</div><div aria-hidden="true"
-                        id="p">p</div><div aria-hidden="true" id="r1">r</div><div
-                        aria-hidden="true" id="i">i</div><div aria-hidden="true"
-                        id="s">s</div><div aria-hidden="true" id="e2">e</div><div
-                        aria-hidden="true" id="s1">s</div></div>
-            </h1>
-        </div>
-    </body>
-</html>
->>>>>>> Stashed changes
