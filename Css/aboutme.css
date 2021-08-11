@@ -74,6 +74,49 @@
         color: white;
     }
 
+    .backbutton{
+        position:relative;
+        left: 50%;
+        top: 5%;
+        height: 50px;
+        width: 50px;
+        font-size: 1.5rem;
+        color: #222831;
+        background-color: #393E46;
+        border: #222831 solid 3px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.5s 0s ease;
+        -moz-transition: all 0.5s 0s ease;
+        -o-transition: all 0.5s 0s ease;
+        transition: all 0.5s 0s ease;
+    }
+
+    #homep{
+        position: relative;
+    }
+
+    .backbutton:hover{
+        border-radius: 20%;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 3rem;
+        height: 100px;
+        width: 100px;
+        color:#4a4a4a;
+    }
+
+    .backbutton:active{
+        color:#222831;
+    }
+
+    .inline{
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        display: inline;
+    }
+
     @keyframes dropdown {
         0% { 
              top: -50%; 
