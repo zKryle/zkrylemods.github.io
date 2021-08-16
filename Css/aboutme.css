@@ -10,8 +10,9 @@
     
     #upperborder {
         position: fixed;
-        width: 89.78%;
-        height: 9%;
+        width: 100%;
+        min-width: 100%;
+        height: 90px;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -19,7 +20,7 @@
         border-bottom: 4px solid #222831;
         border-right: 4px solid #393E46;
         border-left: 4px solid #393E46;
-        z-index: 2;
+        z-index: 1;
     }
     
     #upheader {
@@ -43,6 +44,7 @@
     #rightborder {
         position: fixed;
         width: 5%;
+        min-width: 98px;
         height: 100%;
         top: 0;
         left: 97.5%;
@@ -50,12 +52,13 @@
         background-color: #393E46;
         border-left: 4px solid;
         border-color: #222831;
-        z-index: 1;
+        z-index: 2;
     }
     
     #leftborder {
         position: fixed;
         width: 5%;
+        min-width: 98px;
         height: 100%;
         top: 0;
         left: 2.5%;
@@ -63,29 +66,38 @@
         background-color: #393E46;
         border-right: 4px solid;
         border-color: #222831;
-        z-index: 1;
+        z-index: 2;
     }
         
     #text {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         position: relative;
-        left: 10%;
-        top: 10%;
+        top: 80px;
+        display: inline-block;
+        margin-left: 260px;
+        margin-right: 260px;
+        background-color: rgba(57, 62, 70, 0.3);
+        border: #222831 2px solid;
+        box-shadow: 0 0 10px;
+        border-radius: 20px;
+    }
+    
+    .paragraph-styling{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: white;
+        margin: 20px;
     }
 
     .backbutton{
-        position:relative;
-        left: 50%;
-        top: 5%;
+        position: absolute;
+        transform: translateX(-50%);
         height: 50px;
         width: 50px;
         font-size: 1.5rem;
         color: #222831;
+        text-align: center;
         background-color: #393E46;
         border: #222831 solid 3px;
         border-radius: 50%;
-        transform: translate(-50%, -50%);
         -webkit-transition: all 0.5s 0s ease;
         -moz-transition: all 0.5s 0s ease;
         -o-transition: all 0.5s 0s ease;
@@ -97,6 +109,7 @@
     }
 
     .backbutton:hover{
+        transform: translateX(-50%) translateY(-20px); 
         border-radius: 20%;
         border-color: transparent;
         background-color: transparent;
@@ -110,11 +123,24 @@
         color:#222831;
     }
 
-    .inline{
+    .uprightcorner{
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        background-color: #393E46;
+        color: #393E46;
+        right: 0;
+        top:0;
+        z-index: 3;
+    } 
+
+    .upleftcorner{
         position: relative;
         width: fit-content;
         height: fit-content;
-        display: inline;
+        top: 20px;
+        left: 2.5%;
+        z-index: 4;
     }
 
     @keyframes dropdown {
