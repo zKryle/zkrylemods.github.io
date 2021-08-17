@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/aboutme.css">
     <script src="https://kit.fontawesome.com/848bb9de37.js" crossorigin="anonymous"></script>
+    <script>
+        function activate(){
+            const downbutton = document.getElementById("downbutton")
+            const elements = [document.getElementById("learnmorep"), downbutton];
+                elements.forEach(element =>{
+                    element.classList.toggle("active");
+                    if (element == downbutton){
+                            downbutton.classList.toggle("fa-chevron-down");
+                            downbutton.classList.toggle("fa-chevron-up");
+                        }
+                    }
+                );
+        }
+    </script>
     <title>Kryle Enterprises - About Me</title>
 </head>
 
@@ -30,7 +44,11 @@
         </div>
         <p id="homep">Home</p>
     <div id="text">
-        <p class="paragraph-styling">
+        <h1 class="paragraph-styling" style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 100;">
+            Learn More
+        </h1>
+        <button id="downbutton" class="fas fa-chevron-down downbutton" onclick="activate()"></button>
+        <p id="learnmorep" class="learnmorep paragraph-styling">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus enim, tempus sed pretium pellentesque, porta a augue. Pellentesque placerat elementum leo, convallis pretium massa luctus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eu tincidunt elit. Maecenas venenatis ex quis ligula venenatis rhoncus. Nunc ultricies in velit sed sagittis. Integer porta lacus vel tortor semper, nec dictum eros euismod. Suspendisse a est lacus. Donec ac porttitor velit, vel fringilla lectus. Quisque condimentum volutpat lacus vitae vestibulum. Nulla lectus massa, vestibulum sed arcu sed, malesuada consequat erat. Vivamus at lacus enim. Nullam vel nibh efficitur, ultrices enim varius, pretium arcu. Fusce placerat est eget gravida dignissim. Integer imperdiet auctor diam ac tempus.
         </p>
     </div>

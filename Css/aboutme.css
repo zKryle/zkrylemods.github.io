@@ -73,8 +73,9 @@
         position: relative;
         top: 80px;
         display: inline-block;
-        margin-left: 260px;
-        margin-right: 260px;
+        left: 50%;
+        max-width: 60%;
+        transform: translateX(-50%);
         background-color: rgba(57, 62, 70, 0.3);
         border: #222831 2px solid;
         box-shadow: 0 0 10px;
@@ -138,9 +139,37 @@
         position: relative;
         width: fit-content;
         height: fit-content;
-        top: 20px;
-        left: 2.5%;
+        top: 18px;
+        left: 45px;
         z-index: 4;
+    }
+
+    .learnmorep{
+        height: 0;
+        font-size: 0;
+        transition: all 0.5s 0s ease;
+    }
+
+    .active{
+        height: auto;
+        font-size: 1rem;
+       
+    }
+
+    .downbutton{
+        background-color: transparent;
+        border: transparent;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        font-size: 1.5rem;
+        color: #222831;
+        transition: all 0.5s 0s ease;
+    }
+
+    .downbutton:hover{
+       color:white;
     }
 
     @keyframes dropdown {
